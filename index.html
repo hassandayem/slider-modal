@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+    />
+
+    <link rel="stylesheet" href="./dist/style/style.css" />
+    <title>Slider Modal</title>
+  </head>
+  <body>
+    <button class="slider-trigger">Open the slider</button>
+    <div class="slider-modal">
+      <div class="slider-content">
+        <span class="slider__close-button"> &times; </span>
+        <div class="content">
+          <ul class="tabs">
+            <li class="tab active" data-tab-target="#tab-1">Tab--1</li>
+            <li class="tab" data-tab-target="#tab-2">Tab--2</li>
+          </ul>
+
+          <div class="tabs-content">
+            <div id="tab-1" data-tab-content class="active">
+              <div class="custom-slider-1">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_960_720.jpg"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/01/24/03/53/plant-2004483_960_720.jpg"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
+                />
+              </div>
+            </div>
+            <div id="tab-2" data-tab-content>
+              <div class="custom-slider-2">
+                <img
+                  protect="true"
+                  src="https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/12/05/11/39/fox-1883658_960_720.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery Script -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <!-- Slick Carousel Script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script defer src="./dist/js/app.js"></script>
+  </body>
+</html>

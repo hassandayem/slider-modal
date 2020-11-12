@@ -1,0 +1,163 @@
+$color-primary: #0f1ffd;
+$color-primary-dark: #02165f;
+$color-secondary: #fffdea;
+$color-tertiary: #f2e2d4;
+
+$color-black: #333;
+$color-grey-dark: #707070;
+$color-grey-lite: #dedac9;
+$color-white: #fbfbfb;
+
+$space-small: 0.7rem;
+$space-medium: 1rem;
+$space-large: 1.5rem;
+
+$border-radius-small: 0.2rem;
+$border-radius-medium: 0.4rem;
+$border-radius-large: 0.8rem;
+
+body {
+  background-color: blueviolet;
+}
+
+.slider-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  display: none;
+  opacity: 0;
+
+  &.active {
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.slider-content {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__close-button {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+
+  &:hover {
+    background-color: darkgray;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.tab {
+  padding: $space-medium;
+  background-color: $color-secondary;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &.active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: bold;
+  }
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.tabs-content {
+  width: 100%;
+}
+
+.active {
+  &[data-tab-content] {
+    display: block;
+  }
+}
+
+img.slick-slide.slick-current.slick-center {
+  width: 800px !important;
+}
+
+.custom-slider-1,
+.custom-slider-2 {
+  &.slick-initialized {
+    &.slick-slider {
+      z-index: 19999;
+      width: 100%;
+    }
+  }
+}
+
+.carousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+  &:before {
+    color: #333;
+  }
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+.slick-list {
+  margin: 0 -20px;
+}
+
+.slick-slide {
+  img {
+    width: 75%;
+    margin: 30px auto;
+  }
+}
+
+.thumbnails-for-slider {
+  &.thumbnails {
+    &.slick-initialized {
+      &.slick-slider {
+        &.slick-dotted {
+          width: 69%;
+          margin: 30px auto;
+        }
+      }
+    }
+  }
+}
